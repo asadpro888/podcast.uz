@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+span,a{
+    display: inline-block;
+}
+.back{
+    background-color: black;
+    margin-left: 90px;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    margin: 0;
+}
+.box{
+    padding: 100px;
+    box-shadow: 4px 4px 9px 9px rgba(255, 248, 248, 0.79);
+    border-radius: 10px;
+    height: 80px;
+    align-items: center;
+    width: 1690px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+.wrap{
+    top: 0;
+    left: 0;
+    margin-top: -0px;
+    padding: auto;
+    margin-bottom: 60px;
+}
+.img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation:anime 0.1s linear infinite;
+    padding: 0px;
+    margin-bottom: -260px;
+    margin-left: 1500px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.boss3{
+    background-color: rgba(0, 0, 0, 0.747);
+    padding: 150px;
+    text-align: center;
+}
+.over{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    font-style: oblique;
+    position: relative;
+}
+.over::after{
+    content: "";
+    width: 100%;
+    height: 60px;
+    border: 5px dotted red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 5px;
+    transition: 0.4s all linear;
+}
+.over:hover::after{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid gold;
+}
+@keyframes anime{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+span,a{
+    display: inline-block;
+}
+.back{
+    background-color: black;
+    margin-left: 90px;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    margin: 0;
+}
+.box{
+    padding: 100px;
+    box-shadow: 4px 4px 9px 9px rgba(255, 248, 248, 0.79);
+    border-radius: 10px;
+    height: 80px;
+    align-items: center;
+    width: 1690px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+.wrap{
+    top: 0;
+    left: 0;
+    margin-top: -0px;
+    padding: auto;
+    margin-bottom: 60px;
+}
+.img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation:anime 0.1s linear infinite;
+    padding: 0px;
+    margin-bottom: -260px;
+    margin-left: 1500px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.lin {
+    font-size: 45px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 15px 30px;
+    background-color: #303030;
+    transition: 0.4s;
+    transform-style: preserve-3d;
+     box-shadow: 4px 4px 9px 9px rgba(255, 248, 248, 0.79);
+}
+.lin:hover {
+    transform: translateY(-50%) rotateX(90deg);
+}
+.lin::before {
+    content: "BACK";
+    position: absolute;
+    padding: 15px 30px;
+    background-color: #3d3d3d;
+    left: 0;
+    box-shadow: 4px 4px 9px 9px rgba(255, 248, 248, 0.79);
+    top: 100%;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    transition: 0.4s;
+}
+.lin:hover::before {
+    background-color: #313131;
+    box-shadow: 4px 4px 9px 9px rgba(255, 248, 248, 0.79);
+}
+@keyframes anime{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

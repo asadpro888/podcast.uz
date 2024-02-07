@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+span,a{
+    display: inline-block;
+}
+.main{
+    background-color: rgb(32, 32, 32);
+    padding: 100px;
+}
+@media(max-width: 1160px){
+    .a1{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 1px;
+        text-align: center;
+    }
+    .main{
+        padding: 10px;
+    }
+}
+@media(max-width: 360px){
+    .main{
+        padding: 10px;
+    }
+}
+@media(max-width: 1000px){
+    .border{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media(max-width: 300px){
+    .main{
+        width: 100%;
+        height: 100%;
+        padding: 1px;
+    }
+}
+@media(max-width: 1600px){
+    .img{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        margin-left: 0px;
+        margin-bottom: 200px;
+        margin-top: 0px;
+        display: none;
+        text-align: right;
+    }
+}
+.big{
+    text-align: center;
+    margin-top: -20px;
+    color: aliceblue;
+    font-style: oblique;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: fantasy;
+}
+.link{
+    border-top: 3px solid rgb(255, 0, 0);
+}
+
+.a1 {
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.5s all linear;
+    box-shadow: 4px 4px 15px rgb(255, 255, 255);
+}
+
+.a1:hover {
+    background-color: #ff0000;
+    transform: scale(1.2)
+}
+.a1:active {
+    background-color: #1900ff;
+    transform: scale(0.9)
+}
+.block{
+    text-align: center;
+}
+.border{
+    border: 2px dotted red;
+    overflow: hidden;
+    box-shadow: 4px 4px 9px 9px rgba(255, 0, 0, 0.79);
+}
+.pic{
+    max-width: 100%;
+    width: 2000px;
+    transition: 0.5s all linear;
+}
+.pic:hover{
+    transform: scale(1.1);
+}
+.bttn{
+    border: none;
+    color: rgb(0, 26, 255);
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    font-size: 15px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+.wrap{
+    top: 0;
+    left: 0;
+    margin-top: -0px;
+    padding: auto;
+    margin-bottom: 60px;
+}
+.img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation:anime 0.1s linear infinite;
+    padding: 0px;
+    margin-bottom: -200px;
+    margin-left: 1500px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.bttn1{
+    border: none;
+    color: rgb(0, 26, 255);
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    font-size: 15px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+.bttn2{
+    border: none;
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    font-size: 15px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+.type{
+    background-color: rgb(255, 234, 0);
+    
+}
+.type1{
+    background-color: rgb(4, 255, 0);
+    
+}
+.type2{
+    background-color: rgb(255, 0, 221);
+    
+}
+.btn{
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 0, 0);
+}
+.btn1{
+    background-color: rgb(0, 0, 0);
+    color: rgb(60, 255, 0);
+}
+.btn2{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+}
+@keyframes anime{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
